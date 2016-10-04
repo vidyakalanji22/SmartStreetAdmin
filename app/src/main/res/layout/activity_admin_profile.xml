@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main Linear Layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="msd.com.smartstreet.UserProfileActivity"
+    android:orientation="vertical"
+    android:weightSum="17"
+    android:background="#EEEEEE">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <!-- Linear Layout for the image and the email -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- ImageButton for the email icon -->
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/admin"
+            android:background="#00F0F8FF"/>
+
+        <!-- TextView for the email -->
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <!-- linear Layout for the password image and text -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- ImageButton for the password image -->
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/password"
+            android:background="#00F0F8FF"/>
+
+        <!-- TextView for the password text -->
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/password"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="********"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+   </LinearLayout>

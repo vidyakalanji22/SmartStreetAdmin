@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="admin.msd.com.smartstreetadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.msd.smartstreet.Sensor_registration"
+            android:label="Register Sensor" />
+        <activity
+            android:name="com.msd.smartstreet.TreeRegistration"
+            android:label="Register Tree" />
+        <activity
+            android:name="com.msd.smartstreet.SensorMaintenance"
+            android:label="Sensor Maintenance" />
+        <activity
+            android:name="com.msd.smartstreet.TreeMaintenance"
+            android:label="Tree Maintenance" />
+        <activity
+            android:name="com.msd.smartstreet.AdminLogin"
+            android:label="Login">
+
+        </activity>
+        <activity
+            android:name="com.msd.smartstreet.AdminProfile"
+            android:label="Admin Profile" />
+        <activity
+            android:name="com.msd.smartstreet.AdminHome"
+            android:label="Admin Home" />
+        <activity
+            android:name="com.msd.smartstreet.InteractedData"
+            android:label="Interaction Records" />
+        <activity android:name="com.msd.smartstreet.ActivitySplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
